@@ -1518,3 +1518,31 @@ address {
   }
 }
 
+/* === Idioma al mismo nivel y estilo que el menú === */
+.nav-menu{ display:flex; align-items:center; gap:2rem; }
+
+.nav-lang{
+  display:flex; align-items:center; gap:.5rem;
+  margin-left:.5rem;
+}
+
+.lang-label.nav-link{ padding:0; }
+
+.lang-select{
+  appearance:none; -webkit-appearance:none; -moz-appearance:none;
+  background:transparent; border:0; padding:0;
+  font:inherit; text-transform:uppercase; letter-spacing:.02em;
+  color:#222; opacity:.85; cursor:pointer; line-height:1;
+  transition: color .18s ease, opacity .18s ease, transform .12s ease;
+}
+.lang-select:hover{ color:#43a047; opacity:1; transform:translateY(-1px); }
+.lang-select:focus{ outline:none; }
+
+@media (max-width:700px){
+  .nav-lang{ width:100%; padding:1rem 1.5rem; border-top:1px solid #f0f0f0; }
+  .lang-label{ margin-right:.35rem; }
+  .lang-select{
+    background:#fff; border:1px solid #e5e7eb; border-radius:8px;
+    padding:.35rem .6rem;
+  }
+}
