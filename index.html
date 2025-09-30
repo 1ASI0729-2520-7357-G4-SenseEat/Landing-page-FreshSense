@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>FreshSense</title>
+
+  <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/testimonials.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- ============ HEADER ============ -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="assets/images/FreshSense.jpg" alt="FreshSense Logo" />
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home"         class="nav-link" data-i18n="nav.home">HOME</a>
+        <a href="#how-it-works" class="nav-link" data-i18n="nav.about">ABOUT</a>
+        <a href="#features"     class="nav-link" data-i18n="nav.benefits">BENEFITS</a>
+        <a href="#pricing"      class="nav-link" data-i18n="nav.plans">PLANS</a>
+        <a href="#testimonials" class="nav-link" data-i18n="nav.testimonials">TESTIMONIALS</a>
+        <a href="#contact"      class="nav-link" data-i18n="nav.contact">CONTACT</a>
+
+        <!-- Idioma traducible -->
+        <div class="nav-lang">
+          <span class="nav-link lang-label" data-i18n="nav.language">           LANGUAGE</span>
+          <select id="lang-switch" aria-label="Language" class="lang-select">
+            <option value="en">EN</option>
+            <option value="es">ES</option>
+          </select>
+        </div>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">
+        <i class='bx bx-menu'></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="home">
+        <div class="container">
+          <span class="hero-subtitle" data-i18n="hero.kicker">Welcome to the Future of Fresh Food</span>
+          <h2 class="h1 hero-title" data-i18n="hero.title">Transform Your Kitchen with FreshSense Technology</h2>
+
+          <p class="hero-text" data-i18n="hero.lead">
+            Experience revolutionary smart refrigeration that learns your habits, 
+            preserves food longer, and helps you save money while reducing waste. 
+            Join the future of intelligent food storage.
+          </p>
+
+          <div class="btn-group">
+            <button class="btn btn-primary"  data-i18n="hero.cta.primary">Get Started</button>
+            <button class="btn btn-secondary" data-i18n="hero.cta.secondary">Watch Demo</button>
+          </div>
+
+          <div class="Txt-arrow">
+            <p data-i18n="hero.scroll">Explore Smart Features</p>
+            <a href="#features" class="scroll-btn">
+              <ion-icon name="chevron-down-outline" class="scroll-icon"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ HOW IT WORKS ============ -->
+      <section class="popular" id="how-it-works">
+        <div class="container">
+          <h2 class="h2 section-title" data-i18n="works.title">HOW FRESHSENSE WORKS</h2>
+
+          <ul class="popular-list">
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="assets/images/refri1.jpg" alt="Place the Sensor" loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    <a href="#" data-i18n="works.step1.title">STEP 1: Place the Sensor</a>
+                  </h3>
+                  <p class="card-text" data-i18n="works.step1.text">
+                    Install the FreshSense device inside your fridge. It starts measuring temperature, humidity, and ethylene gas right away.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="assets/images/ondas.png" alt="Real-Time Data" loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    <a href="#" data-i18n="works.step2.title">STEP 2: Real-Time Data</a>
+                  </h3>
+                  <p class="card-text" data-i18n="works.step2.text">
+                    FreshSense sends live data to your personal dashboard. Track the freshness of your food anytime, anywhere.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="assets/images/cel.jpg" alt="Smart Alerts" loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3 card-title">
+                    <a href="#" data-i18n="works.step3.title">STEP 3: Smart Alerts</a>
+                  </h3>
+                  <p class="card-text" data-i18n="works.step3.text">
+                    Get instant alerts when food is about to spoil. Use it before it's wasted and save money.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="learn-more-container">
+            <button class="btn learn-more" data-i18n="works.more">Learn More</button>
+          </div>
+        </div>
+      </section>
+
+      </section>
+
+      <!-- ============ TRUST STRIP ============ -->
+      <section class="trust-strip" aria-label="Trust indicators">
+        <div class="container trust-items">
+        <div> 30% less food waste</div>
+        <div> Secure data</div>
+        <div> Real-time alerts</div>
+        <div> Sustainable choice</div>
+        </div>
+      </section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="popular" id="how-it-works">
+
+      <!-- ============ BENEFITS ============ -->
+      <section class="benefits" id="features">
+        <div class="container">
+          <h2 class="h2 section-title" data-i18n="benefits.title">BENEFITS</h2>
+          <p class="section-subtitle" data-i18n="benefits.subtitle">Why You'll Love FreshSense</p>
+
+          <div class="benefits-list">
+            <div class="benefit-card">
+              <ion-icon name="cash-outline" class="benefit-icon"></ion-icon>
+              <h3 class="benefit-title" data-i18n="benefits.b1.title">Save Money</h3>
+              <p class="benefit-text" data-i18n="benefits.b1.text">
+                Reduce food waste and save on your grocery bills with smart expiration tracking
+              </p>
+            </div>
+
+            <div class="benefit-card">
+              <ion-icon name="leaf-outline" class="benefit-icon"></ion-icon>
+              <h3 class="benefit-title" data-i18n="benefits.b2.title">Reduce Food Waste</h3>
+              <p class="benefit-text" data-i18n="benefits.b2.text">
+                Get alerts before food spoils and contribute to a more sustainable future
+              </p>
+            </div>
+
+            <div class="benefit-card">
+              <ion-icon name="book-outline" class="benefit-icon"></ion-icon>
+              <h3 class="benefit-title" data-i18n="benefits.b3.title">Get Smart Recipes</h3>
+              <p class="benefit-text" data-i18n="benefits.b3.text">
+                Receive personalized recipe suggestions based on your available ingredients
+              </p>
+            </div>
+
+            <div class="benefit-card">
+              <ion-icon name="nutrition-outline" class="benefit-icon"></ion-icon>
+              <h3 class="benefit-title" data-i18n="benefits.b4.title">Track Your Food</h3>
+              <p class="benefit-text" data-i18n="benefits.b4.text">
+                Monitor freshness levels and get real-time updates on your food's condition
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PRICING ============ -->
+      <section class="pricing" id="pricing">
+        <div class="container">
+          <h2 class="h2 section-title" data-i18n="pricing.title">PRICING PLANS</h2>
+          <p class="section-subtitle" data-i18n="pricing.subtitle">Simple Plans for Every Home</p>
+
+        <div class="pricing-plans">
+          <!-- Basic Plan -->
+          <div class="pricing-card">
+            <h3 class="plan-name">BASIC</h3>
+            <div class="plan-price">$9.9</div>
+            <div class="plan-duration" data-i18n="pricing.perMonth">/MON</div>
+            <ul class="plan-features">
+              <li data-i18n="pricing.basic.f1">2 dispositivos</li>
+              <li data-i18n="pricing.basic.f2">Monitoreo de temperatura, humedad y gas etileno</li>
+              <li data-i18n="pricing.basic.f3">Alertas de descomposición</li>
+              <li data-i18n="pricing.basic.f4">Historial de 7 días</li>
+              <li data-i18n="pricing.basic.f5">Panel web con estado general de alimentos</li>
+              <li data-i18n="pricing.basic.f6">Soporte técnico estándar</li>
+            </ul>
+            <a href="#" class="plan-button" data-i18n="pricing.signup">SIGN UP</a>
+          </div>
+
+          <!-- Standard Plan -->
+          <div class="pricing-card featured" aria-label="Most popular plan">
+            <div class="plan-badge">MOST POPULAR</div>
+            <h3 class="plan-name">STANDARD</h3>
+            <div class="plan-price">$19.90</div>
+            <div class="plan-duration">/MON</div>
+            <ul class="plan-features">
+              <li data-i18n="pricing.std.f1">4 dispositivos FreshSense</li>
+              <li data-i18n="pricing.std.f2">Registro de inventario automático</li>
+              <li data-i18n="pricing.std.f3">Alertas inteligentes de caducidad</li>
+              <li data-i18n="pricing.std.f4">Recetas sugeridas según los alimentos</li>
+              <li data-i18n="pricing.std.f5">Historial de 30 días</li>
+              <li data-i18n="pricing.std.f6">Reportes mensuales de ahorro</li>
+              <li data-i18n="pricing.std.f7">Estadísticas detalladas y gráficas</li>
+            </ul>
+            <a href="#" class="plan-button" data-i18n="pricing.signup">SIGN UP</a>
+          </div>
+
+          <!-- Premium Plan -->
+          <div class="pricing-card">
+            <h3 class="plan-name">PREMIUM</h3>
+            <div class="plan-price">$39.9</div>
+            <div class="plan-duration" data-i18n="pricing.perMonth">/MON</div>
+            <ul class="plan-features">
+              <li data-i18n="pricing.prem.f1">6 dispositivos FreshSense</li>
+              <li data-i18n="pricing.prem.f2">Recetas que priorizan ingredientes próximos a vencer</li>
+              <li data-i18n="pricing.prem.f3">Alertas inteligentes de caducidad</li>
+              <li data-i18n="pricing.prem.f4">Historial de 30 días</li>
+              <li data-i18n="pricing.prem.f5">Reportes detallados personalizados</li>
+              <li data-i18n="pricing.prem.f6">Soporte prioritario 24/7</li>
+            </ul>
+            <a href="#" class="plan-button" data-i18n="pricing.signup">SIGN UP</a>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <!-- ============ TESTIMONIALS ============ -->
+      <section class="testimonials" id="testimonials">
+        <div class="container">
+          <h2 class="h2 section-title" data-i18n="testimonials.title">TESTIMONIALS</h2>
+          <p class="section-subtitle" data-i18n="testimonials.subtitle">What Our Users Say</p>
+
+          <div class="testimonial-slider-wrapper">
+            <button class="testimonial-btn" id="prev-btn" aria-label="Previous testimonial">&#10094;</button>
+            <div class="testimonial-slider" id="testimonial-slider">
+
+              <div class="testimonial-slide">
+                <div class="testimonial-card">
+                  <div class="testimonial-content">
+                    <p class="testimonial-text" data-i18n="t1.text">
+                      "Me encanta que FreshSense no solo nos ayuda a ahorrar dinero, sino que también reduce nuestro impacto ambiental."
+                    </p>
+                  </div>
+                  <div class="testimonial-author">
+                    <img src="assets/images/user1.jpg" alt="Julian Cueva" class="author-image">
+                    <div class="author-info">
+                      <h4 class="author-name">Julian Cueva</h4>
+                      <p class="author-role" data-i18n="t1.role">Restaurant Owner</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-slide">
+                <div class="testimonial-card">
+                  <div class="testimonial-content">
+                    <p class="testimonial-text" data-i18n="t2.text">
+                      "Trabajo todo el día y antes se me echaban a perder los alimentos. Ahora FreshSense me avisa cuando algo está por vencer..."
+                    </p>
+                  </div>
+                  <div class="testimonial-author">
+                    <img src="assets/images/user2.jpg" alt="Lily Huerta" class="author-image">
+                    <div class="author-info">
+                      <h4 class="author-name">Lily Huerta</h4>
+                      <p class="author-role" data-i18n="t2.role">Usuario</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-slide">
+                <div class="testimonial-card">
+                  <div class="testimonial-content">
+                    <p class="testimonial-text" data-i18n="t3.text">
+                      "Llevo usando FreshSense por un año... desperdicio menos"
+                    </p>
+                  </div>
+                  <div class="testimonial-author">
+                    <img src="assets/images/user3.webp" alt="Pedro Perez" class="author-image">
+                    <div class="author-info">
+                      <h4 class="author-name">Pedro Perez</h4>
+                      <p class="author-role" data-i18n="t3.role">Emprendedor</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <button class="testimonial-btn" id="next-btn" aria-label="Next testimonial">&#10095;</button>
+          </div>
+          <div class="testimonial-dots" id="testimonial-dots"></div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="contact-section" id="contact">
+        <div class="container">
+          <h2 class="h2 section-title" data-i18n="contact.title">CONTACT US</h2>
+          <p class="section-subtitle" data-i18n="contact.subtitle">Get in Touch with Us</p>
+
+          <form class="contact-form" action="#" method="POST">
+            <div class="form-row">
+              <input type="text" id="name" name="name" placeholder="Name"
+                     data-i18n="contact.name" data-i18n-attr="placeholder" required>
+              <input type="text" id="lastname" name="lastname" placeholder="LastName"
+                     data-i18n="contact.lastname" data-i18n-attr="placeholder" required>
+            </div>
+            <div class="form-row">
+              <input type="email" id="email" name="email" placeholder="mail"
+                     data-i18n="contact.email" data-i18n-attr="placeholder" required>
+            </div>
+            <div class="form-row">
+              <textarea id="message" name="message" placeholder="Message"
+                        data-i18n="contact.message" data-i18n-attr="placeholder" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" data-i18n="contact.submit">SUBMIT</button>
+          </form>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="assets/images/FreshSense.jpg" alt="logo">
+          </a>
+          <p class="footer-text" data-i18n="footer.blurb">
+          FreshSense brings innovation to your kitchen by helping you preserve food longer, 
+          save money, and reduce waste. Smart, sustainable, and designed to make your home more efficient.
+          </p>
+        </div>
+
+        <div class="footer-contact">
+          <h4 class="contact-title" data-i18n="footer.contact.title">Contact Us</h4>
+          <p class="contact-text" data-i18n="footer.contact.text">Feel free to contact and reach us !!</p>
+          <ul>
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+              <a href="tel:+01123456790" class="contact-link">+51 123 456 789</a>
+            </li>
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+              <a href="mailto:info.tourly.com" class="contact-link">info.com</a>
+            </li>
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+              <address data-i18n="footer.contact.addr">direccion imaginaria</address>
+            </li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2 data-i18n="footer.follow">FOLLOW US</h2>
+          <div class="red-social">
+            <a href="" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2025 <a href="">.</a> <span data-i18n="footer.rights">All rights reserved</span>
+        </p>
+        <ul class="footer-bottom-list">
+          <li><a href="#" class="footer-bottom-link" data-i18n="footer.privacy">Privacy Policy</a></li>
+          <li><a href="#" class="footer-bottom-link" data-i18n="footer.terms">Term & Condition</a></li>
+          <li><a href="#" class="footer-bottom-link" data-i18n="footer.faq">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/script.js"></script>
+  <script src="assets/testimonials.js"></script>
+  <script src="assets/translate.js" defer></script>
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
